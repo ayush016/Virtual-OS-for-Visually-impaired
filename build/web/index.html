@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Virtually Impaired</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Virtual OS</strong> for partially Impaired People</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="#three">About Us</a>
+						<a href="#footer">Contact Us</a>
+                        <a class="button special" style="padding-right:1%" data-toggle="modal" data-target="#login">Log In</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome to Universe!</h1>
+					</header>
+
+					
+				</div>
+			</section>
+
+
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+                <h3>Know Us More</h3>
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="images/pic01.JPG" style="width:250px; height:250px" alt="Pic 01" />
+							</div>
+							<header>
+								<h3 style="font-variant:small-caps"><strong>Ayush</strong><br /> Shrivastava</h3>
+							</header>
+							<p><a href="https://plus.google.com/104800165113419285566" target="_blank"><span class="fa fa-google-plus-circle" style="color:#d34836; font-size:30px; margin-right:5px; border-right:2px solid #999; padding-right:0.3em; cursor:pointer"></span></a><a href="https://www.linkedin.com/in/ayush-shrivastava-882912106/" target="_blank"><span class="fa fa-linkedin-square" style="color:#0077B5; font-size:30px; margin-left:5px; cursor:pointer"></span></a></p>
+						</article>
+                        <article>
+							<div class="image round">
+								<img src="images/pic02.jpg" style="width:250px; height:250px" alt="Pic 01" />
+							</div>
+							<header>
+								<h3 style="font-variant:small-caps"><strong>Pushkar</strong><br /> Garg</h3>
+							</header>
+							<p><a href="https://plus.google.com/107868753346894783447" target="_blank"><span class="fa fa-google-plus-circle" style="color:#d34836; font-size:30px; margin-right:5px; border-right:2px solid #999; padding-right:0.3em; cursor:pointer"></span></a><a href="https://www.linkedin.com/in/pushkar-garg-bb96a8112/" target="_blank"><span class="fa fa-linkedin-square" style="color:#0077B5; font-size:30px; margin-left:5px; cursor:pointer"></span></a></p>
+						</article>
+						<article>
+							<div class="image round">
+								<img src="images/pic03.jpg" style="width:250px; height:250px" alt="Pic 02" />
+							</div>
+							<header>
+								<h3 style="font-variant:small-caps"><strong>Pulkit</strong><br /> Garg</h3>
+							</header>
+							<p><a href="https://plus.google.com/u/0/111550466403448398044" target="_blank"><span class="fa fa-google-plus-circle" style="color:#d34836; font-size:30px; margin-right:5px; border-right:2px solid #999; padding-right:0.3em; cursor:pointer"></span></a><a href="https://www.linkedin.com/in/pulkit-garg-6347a1114/" target="_blank"><span class="fa fa-linkedin-square" style="color:#0077B5; font-size:30px; margin-left:5px; cursor:pointer"></span></a></p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+                        <h3>Get in touch</h3>
+    					<div style="width:55%;float:left">
+                       <form action="SendMailAttachServlet" method="post" enctype="multipart/form-data">
+    
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" id="s" name="subject" size="50"/>
+                            </div>
+                            <div class="field half">
+                                <label for="email">Your E-mail</label>
+                                <input  type="text" id="r" name="recipient" size="50"/>
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <input type="text" id="c" name="content">
+                            </div>
+                            <ul class="actions">
+                                <li><input value="Send Message" class="button alt" type="submit"></li>
+                            </ul>
+                        </form>
+                        </div>
+                        
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.9643042291764!2d75.92133461425772!3d26.936346083117392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1509297336081" width="600" height="400" frameborder="0" style="border:0; width:40%" allowfullscreen></iframe>
+                                            
+                    
+					
+
+				</div>
+			</footer>
+            
+            <div class="modal fade" role="dialog" id="login" style="z-index:500000">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Log In</h4>
+                  </div>
+                  <div class="modal-body">
+                   
+	<form action="SendMailAttachServletOtp" method="post" enctype="multipart/form-data" onsubmit="randomWholeNum()">
+		
+			
+			<tr>
+                            <td >E-MAIL </td><br>
+				<td><input type="text" name="recipient" value="" /></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center"></td>
+			</tr>
+                        <tr>
+				
+				<td><input  type = 'hidden'id ='otp' name="content" value=""> </td>
+			</tr>
+		</table>	
+	
+                  </div>
+                  <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Close"></input>
+                    <input class="btn btn-default" id = "hide" type="submit" value="Generate Otp"/></input>
+                  </div></form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="RandomNumber.js"></script> 
+
+<script>
+$( "#hide" ).click(function() {
+  $( "#hide" ).hide( "slow", function() {
+    //alert( "Animation complete." );
+  });
+});
+</script>
